@@ -18,6 +18,7 @@ public class DdnsUpdateController {
     @GetMapping("/update")
     public String updateDdns(HttpServletRequest request) {
         String remoteHost = request.getRemoteHost();
+        System.out.println("ddns更新：新的IP地址为" + remoteHost);
         return remoteHost;
     }
 }
